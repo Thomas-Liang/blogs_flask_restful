@@ -44,4 +44,15 @@ class UnitTestConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xuan0216@127.0.0.1:3306/restful_test'
 
     #测试环境日志等级
+<<<<<<< HEAD
     LEVEL_LOG = logging.DEBUG
+=======
+    LEVEL_LOG = logging.DEBUG
+
+#定义字典，存储关键字对应的不同的配置类的类名
+configs = {
+    'dev':DevelopmentConfig,
+    'pro':ProductionConfig,
+    'unit':UnitTestConfig
+}
+>>>>>>> 150ca37... Second Commit
